@@ -1,6 +1,8 @@
 ---
 title: Odoo에서 번역 추가 및 변경하기
-author: Yoon Sua
+author:
+  name: Yoon Sua
+  link: https://github.com/Yoon-sua
 date: 2021-08-27 06:00:00 +0800
 categories: [Odoo, i18n]
 tags: [odoo, i18n, 번역]
@@ -105,6 +107,8 @@ msgid "Sale Order Number"
 msgstr "판매 주문 번호"
 ```
 
-# 참고할 수 있는 사이트
+# 마치며, 🙇🏻
+
+## 참고한 사이트
 
 [`Odoo documentation 14.0` Translating Modules](https://www.odoo.com/documentation/14.0/developer/misc/i18n/translations.html){:target="_blank"}

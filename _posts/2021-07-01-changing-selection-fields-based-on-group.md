@@ -1,6 +1,8 @@
 ---
 title: 그룹에 따라 Selection 필드 변경하기
-author: Park Jihee
+author:
+  name: Park Jihee
+  link: https://github.com/park-jihee
 date: 2021-07-01 22:10:00 +0800
 categories: [Odoo, views]
 tags: [odoo, views, selection]
@@ -10,7 +12,7 @@ tags: [odoo, views, selection]
 
 로그인한 유저가 사용자 또는 관리자일 경우에 따라 보여지는 선택 필드를 변경합니다.
 
-기본적인 선택 필드의 사용방법은 아래와 같습니.
+기본적인 선택 필드의 사용방법은 아래와 같습니다.
 
 ```python
 number = fields.Selection([('one', 'One'), ('two', 'Two')], string="number")
@@ -68,7 +70,9 @@ def _get_selection(self):
 <field name="selc" widget="radio" string="number"/>
 ```
 
-# 참고한 사이트
+# 마치며, 🙇🏻
 
-👉 [http://justodoo.blogspot.com/2019/02/how-to-show-selection-values-based-on.html](http://justodoo.blogspot.com/2019/02/how-to-show-selection-values-based-on.html)
+## 참고한 사이트
+
+[`Blog` How to show selection values based on groups](http://justodoo.blogspot.com/2019/02/how-to-show-selection-values-based-on.html)
 

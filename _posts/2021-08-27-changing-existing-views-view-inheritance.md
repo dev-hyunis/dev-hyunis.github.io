@@ -1,6 +1,8 @@
 ---
 title: Odoo의 뷰(View) 상속에 대해 알아보기
-author: Park Bohee
+author:
+  name: Park Bohee
+  link: https://github.com/parkbohee
 date: 2021-08-27 05:00:00 +0800
 categories: [Odoo, views]
 tags: [odoo, ver 13.0, views, 상속]
@@ -96,7 +98,9 @@ position 속성 중 `attributes` 속성이 가장 많이 사용됩니다.
 </record>
 ```
 
-# 참고할 수 있는 사이트
+# 마치며, 🙇🏻
+
+## 참고한 사이트
 
 [`Odoo documentation 14.0` Views - Inheritance](https://www.odoo.com/documentation/14.0/developer/reference/addons/views.html#inheritance){:target="_blank"}
 

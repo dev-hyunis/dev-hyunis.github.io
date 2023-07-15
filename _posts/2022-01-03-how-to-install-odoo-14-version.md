@@ -1,6 +1,8 @@
 ---
 title: MacOS에 Odoo 버전 14 설치하기
-author: Park Bohee
+author:
+  name: Park Bohee
+  link: https://github.com/parkbohee
 date: 2022-01-03 02:30:00 +0900
 categories: [Odoo, docs]
 tags: [odoo, ver 14.0]
@@ -259,4 +261,4 @@ $ python ./odoo-bin --config=./config/.odoorc --limit-memory-hard 0
 
 ## 참고한 사이트
 
-[https://www.odoo.com/documentation/14.0/setup/install.html#mac-os](https://www.odoo.com/documentation/14.0/setup/install.html#mac-os){:target="_blank"}
+[`Odoo documentation 14.0` Install](https://www.odoo.com/documentation/14.0/setup/install.html#mac-os){:target="_blank"}

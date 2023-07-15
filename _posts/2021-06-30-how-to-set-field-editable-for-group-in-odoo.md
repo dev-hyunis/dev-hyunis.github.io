@@ -1,6 +1,8 @@
 ---
 title: 관리자만 수정이 가능하도록 View 변경하기
-author: Park Bohee
+author:
+  name: Park Bohee
+  link: https://github.com/parkbohee
 date: 2021-06-30 23:50:00 +0800
 categories: [Odoo, views]
 tags: [odoo, ver 13.0, views, 상속]
@@ -28,8 +30,6 @@ ex) `base.group_erp_manager` 그룹에 사용자만 `vat` 필드를 볼 수 있�
 ## 방법1. field 추가
 
 사용자가 관리자 그룹임을 체크하는 필드를 생성해, view에서 해당 필드를 활용해 사용자가 관리자 그룹임을 판단한다.
-
-<br>
 
 **model(python)**
 
@@ -70,6 +70,7 @@ def _compute_is_admin(self):
 <br>
 
 `groups_id` 속성을 사용해 해당 그룹의 사용자만 해당 view를 사용하도록 할 수 있다.
+
 `base.group_erp_manager` 그룹의 사용자만 view가 적용되기 때문에, `readonly`를 `False`로 설정한다.
 
 ```xml
@@ -86,8 +87,10 @@ def _compute_is_admin(self):
 </record>
 ```
 
-# 참고한 사이트
+# 마치며, 🙇🏻
 
-[https://www.odoo.com/fr_FR/forum/aide-1/how-to-set-a-field-editable-only-for-a-group-in-odoo9-107563](https://www.odoo.com/fr_FR/forum/aide-1/how-to-set-a-field-editable-only-for-a-group-in-odoo9-107563){:target="_blank"}
+## 참고한 사이트
 
-[https://www.odoo.com/es_ES/forum/ayuda-1/how-to-make-field-read-only-except-administrative-user-in-odoo-115807](https://www.odoo.com/es_ES/forum/ayuda-1/how-to-make-field-read-only-except-administrative-user-in-odoo-115807){:target="_blank"}
+[`Odoo forum` How to set a field editable only for a group in odoo9](https://www.odoo.com/fr_FR/forum/aide-1/how-to-set-a-field-editable-only-for-a-group-in-odoo9-107563){:target="_blank"}
+
+[`Odoo forum` How to make field readonly except administrative user in odoo](https://www.odoo.com/es_ES/forum/ayuda-1/how-to-make-field-read-only-except-administrative-user-in-odoo-115807){:target="_blank"}
