@@ -84,7 +84,7 @@
             color: var(--main-color);
             margin-right: 1rem;
 
-            &:before {
+            &::before {
               content: '#';
               margin-right: 0.1rem;
             }
